@@ -23,7 +23,7 @@ on someAppHasTerminated:notif
 		tell application "Finder"
 			-- if the specified Volume is mounted. (replace "ObsidianVolume" with your Volume name)
 			if exists "ObsidianVolume" then
-				-- detach the specified Volume. (replace "Volumes/ObsidianVolume" with the path of your mounted Volume).
+				-- detach the specified Volume. (replace "/Volumes/ObsidianVolume" with the path of your mounted Volume).
 				do shell script "hdiutil detach /Volumes/ObsidianVolume"
 			end if
 		end tell
