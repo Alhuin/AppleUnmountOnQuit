@@ -24,7 +24,7 @@ on someAppHasTerminated:notif
 			--- if the specified Volume is mounted. (replace "ObsidianVolume" with your Volume name)
 			if exists "ObsidianVolume" then
 				--- detach the specified Volume. (replace "Volumes/Obsidian" with the path of your mounted Volume).
-				do shell script "hdiutil detach /Volumes/Obsidian"
+				do shell script "hdiutil detach /Volumes/ObsidianVolume"
 			end if
 		end tell
 	end if
