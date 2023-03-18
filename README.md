@@ -26,4 +26,4 @@ This worked pretty well, the only caveat was that I had to manually unmount the 
     <key>LSUIElement</key>
     <true/>
     ```
-    This will make an agent of your Application, when you will run it again you should not see it in the Dock, nor in running applications anymore.
+    This will make an agent of your Application, when you will run it again you should not see it in the Dock, nor in running the applications anymore.
