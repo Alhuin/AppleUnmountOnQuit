@@ -18,12 +18,12 @@ end idle
 on someAppHasTerminated:notif
 	set termedApp to (notif's userInfo's valueForKey:"NSWorkspaceApplicationKey")
 	set termedAppName to (termedApp's localizedName) as text
-	--- if the specified App was terminated. (replace with the desired App name)
+	--- if the specified App was terminated. (replace "Obsidian" with your App name)
 	if termedAppName is "Obsidian" then
 		tell application "Finder"
-			--- if the specified Volume is mounted. (replace with the desired Volume name)
+			--- if the specified Volume is mounted. (replace "ObsidianVolume" with your Volume name)
 			if exists "ObsidianVolume" then
-				--- detach the specified Volume. (replace with the path of the desired Volume path).
+				--- detach the specified Volume. (replace "Volumes/Obsidian" with the path of your mounted Volume).
 				do shell script "hdiutil detach /Volumes/Obsidian"
 			end if
 		end tell
